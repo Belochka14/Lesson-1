@@ -16,6 +16,7 @@ for (let i = 0; i < 2; i++) {
   while (
     typeof a !== "string" || //необязательная проверка
     a == "" ||
+    a == null ||
     a.length > 50
   ) {
     alert("try again");
@@ -24,7 +25,7 @@ for (let i = 0; i < 2; i++) {
 
   let b = +prompt("Во сколько обойдется?", "");
 
-  while (isNaN(b) || b == "") {
+  while (isNaN(b) || b == "" || b == null) {
     // while (не число ИЛИ нажали "отмена" ИЛИ оставили строку пустой)
     alert("try again");
     b = +prompt("Во сколько обойдется?", "");
