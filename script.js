@@ -15,7 +15,7 @@ for (let i = 0; i < 2; i++) {
 
   while (
     typeof a !== "string" || //необязательная проверка
-    typeof a == null ||
+    a == null ||
     a == "" ||
     a.length > 50
   ) {
