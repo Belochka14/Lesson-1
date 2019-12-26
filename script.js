@@ -14,7 +14,7 @@ for (let i = 0; i < 2; i++) {
   let a = prompt("Введите обязательную статью расходов в этом месяце", "");
 
   while (
-    typeof a !== "string" ||
+    typeof a !== "string" || //необязательная проверка
     typeof a == null ||
     a == "" ||
     a.length > 50
@@ -25,7 +25,7 @@ for (let i = 0; i < 2; i++) {
 
   let b = prompt("Во сколько обойдется?", "");
 
-  while (b != +b || b == null || b == "") {
+  while (b != +b || typeof b == null || b == "") {
     // while (не число ИЛИ нажали "отмена" ИЛИ оставили строку пустой)
     alert("try again");
     b = prompt("Во сколько обойдется?", "");
