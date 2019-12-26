@@ -25,7 +25,7 @@ for (let i = 0; i < 2; i++) {
 
   let b = prompt("Во сколько обойдется?", "");
 
-  while (b != +b || typeof b == null || b == "") {
+  while (b != +b || b == null || b == "") {
     // while (не число ИЛИ нажали "отмена" ИЛИ оставили строку пустой)
     alert("try again");
     b = prompt("Во сколько обойдется?", "");
